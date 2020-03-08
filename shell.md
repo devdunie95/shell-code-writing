@@ -1,12 +1,12 @@
 ### code
 
-`section .data
+`section .data `
 
-  msg db '/bin/sh' ; db stands for define byte,` 
+  `msg db '/bin/sh' ; db stands for define byte,` 
 
-`section .text
+`section .text`
 
-  global _start   ; Needed for compiler, comparable to int main()
+  `global _start   ; Needed for compiler, comparable to int main()
 _start:             ; entry point for commands`
 
      ; use the write syscall to print 'Hello world!' to stdout
