@@ -3,9 +3,7 @@
 
 section .text
   global _start   ; Needed for compiler, comparable to int main()
-
-_start:             ; entry point for commands`
- 
+_start:             ; entry point for commands
      ; use the write syscall to print 'Hello world!' to stdout
      mov eax, 4          ; move syscall 4(write) to the eax register
      mov ebx, 1          ; move field descriptor for stdout to ebx
@@ -17,6 +15,5 @@ _start:             ; entry point for commands`
      mov eax, 1          ; mov syscall 1(exit) to the eax register)
      mov ebx, 0          ; move status code to ebx
      int 0x80       ; execute the syscall
-
-`section .data
+section .data
      msg: db “Hello world!”, 0x0a  ; the string, followed by a new line character`
