@@ -1,7 +1,7 @@
 ### code
 
-`section .data`
-  `msg db '/bin/sh' ; db stands for define byte,` 
+`section .data
+  msg db '/bin/sh' ; db stands for define byte,` 
 
 `section .text
   global _start   ; Needed for compiler, comparable to int main()
